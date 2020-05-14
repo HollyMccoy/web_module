@@ -1,27 +1,30 @@
+let i=15;
 function incrementclick()
 {
-                
+         
      let returnval="";
-
-     for (let i=0; i<100;i++)
-    {
-         if (i%3==0 && i%5==0)
+    
+   //  for (let i=0; i<100;i++)
+    //{
+         if (i%3===0 && i%5===0)
         {
-          returnValue='FizzBuzz';
+          returnval='FizzBuzz';
         }
         else if(1%3==0)
         {
-             returnValue='Fizz';
+          returnval='Fizz';
         }
         else if (i%5==0)
         {
-              returnValue='Buzz';
+          returnval='Buzz';
         }
         else
         {
-            returnValue+=i+' ';
+          returnval+=i+' ';
         }
-
-     }
-    return returnValue;
+        i++;
+     //}
+     document.getElementById("fizzbuzzresult").innerHTML=returnval;
+ 
+    //return returnval;
 }
