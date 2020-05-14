@@ -1,4 +1,4 @@
-let i=15;
+let i=1;
 function incrementclick()
 {
          

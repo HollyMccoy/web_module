@@ -15,10 +15,11 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-align: inline-text;
-  height: 100px;
-  float: left;
+  height: 50px;
+  float: center;
   width: 45%;
 }
+
 .button {
     background-color: cornflowerblue;
     border: 2px dotted rgb(49, 70, 94);

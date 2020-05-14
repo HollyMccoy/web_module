@@ -6,7 +6,11 @@
         <script src="script.js"></script>
         <h1>
             Welcome,
+            <output type="text" id="userName">
+                current user
+            </output>
         </h1>
+      
     </head>
 <br></br>
     <main>
@@ -14,14 +18,16 @@
         <center>
 
             <p>
-               Your current FizzBuzz value is: 
+               Your current FizzBuzz value is:      
+                  
+               <output type="text" name="fizzBuzz" id="fizzbuzzresult">
+                1
+            </output>
             </p>
             <form action ="script.js" method="post"></form>
             <p>
                 
-                <output type="text" name="fizzBuzz" id="fizzbuzzresult">
-                    fizz
-                </output>
+               
             </p>
             <button onclick="incrementclick()" class="button">
                 Click to increment
