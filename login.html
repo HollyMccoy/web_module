@@ -3,12 +3,15 @@
     <head>
         <title>User Login</title>
         <link rel="stylesheet" href="style.css">
+        <script src="login.js"></script>
         <h1>
             ENTER USERNAME:
             <form>
-                
-                <input type="text" name="user" id="usernameInput" placeHolder="Username..."><br>
-                <input type="button" id="loginBtn" class="btn btn-primary btn-lg" value="Submit" onclick="getUserInfo('http://basic-web.dev.avc.web.usf.edu/', user.value)">
+                <input type="text"  id="usernameInput" placeHolder="Username...">
+            <br>
+                <button onclick="loginPG1()" class="button" id="loginBtn">
+                    submit
+                </button>
             </form>
         </h1>
     </head>
