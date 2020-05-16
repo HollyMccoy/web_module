@@ -11,7 +11,8 @@ function loginPG1()
   else
   {
     sessionStorage.setItem("userNameStorage", userName);
-    window.location.replace("index.html");
+    window.location.href="index.html";
+    
   }
 
 }
