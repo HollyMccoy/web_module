@@ -52,7 +52,7 @@ function incrementclick()
             break;
         }
       });
-   //return returnval;
+   
 });
 
 
@@ -82,7 +82,7 @@ function loginPG2()
  }
   
  });
- fizzbuzzresult.innerHTML=score;
+ 
 }
  
 
