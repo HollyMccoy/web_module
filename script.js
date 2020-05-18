@@ -71,17 +71,18 @@ function loginPG2()
  if(response.status == 200){
     username = response.data.id; 
     score = response.data.score; 
- 
+    
  }
  else{
 
    post("http://basic-web.dev.avc.web.usf.edu/"+user, { score: 0 }); 
-  
+   get("http://basic-web.dev.avc.web.usf.edu/"+user).then(function(response){
+     score=response.data.score; });
    /* create a new user. */
  }
   
  });
-     
+ fizzbuzzresult.innerHTML=score;
 }
  
 
