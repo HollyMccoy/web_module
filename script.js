@@ -1,5 +1,6 @@
+"use strict";
 window.onload = loginPG2;
-let user;
+const user;
 let score;
 function incrementclick()
 {
@@ -27,8 +28,7 @@ function incrementclick()
         {
           returnval=score+' ';
         }
-        
-          fizzbuzzresult.innerHTML=returnval;
+        document.getElementById("fizzbuzzresult").textContent=returnval;
       post("http://basic-web.dev.avc.web.usf.edu/"+user, {score: score}).then(function(response){
         switch(response.status){
           case 200:
@@ -63,7 +63,7 @@ function loginPG2()
 {
    
  user= sessionStorage.getItem("userNameStorage");
-  document.getElementById("userName").innerHTML = user;
+  document.getElementById("userName").textContent = user;
   
  get("http://basic-web.dev.avc.web.usf.edu/"+user).then(function(response){
  
