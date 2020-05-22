@@ -2,45 +2,31 @@
 window.onload = loginPG2;
 let user;
 let score;
+let returnval;
+//gets, increments, and posts score. while  
 function incrementclick()
 {
-         
-     let returnval=score;
+  returnval=score;
+     
     
 
      get("http://basic-web.dev.avc.web.usf.edu/"+user).then(function(response){
         score = response.data.score;
         console.log(score);
         score++;
-        if (score%3===0 && score%5===0 && score!=0)
-        {
-          returnval='FizzBuzz';
-        }
-        else if(score%3==0 && score!=0)
-        {
-          returnval='Fizz';
-        }
-        else if (score%5==0 && score!=0)
-        {
-          returnval='Buzz';
-        }
-        else
-        {
-          returnval=score;
-        }
-
+      });
+      assignFizzBuzz();
         document.getElementById("fizzbuzzresult").textContent=returnval;
       post("http://basic-web.dev.avc.web.usf.edu/"+user, {score: score});
    
-});
+
 ///////NOTICE IF SEESION IS CONNECTED ontimeout() check for error condition
 
 
-////git checkout -b "branch b"
 
 }
 
-
+//setsup loging when index page loads
 function loginPG2()
 {
    
@@ -65,11 +51,28 @@ function loginPG2()
 }
  
 
-
-function play()
+//assigns name for fizzbuzz output
+function assignFizzBuzz()
 {
+    
 
-//////WRITE THIS
+    if (score%3===0 && score%5===0 && score!=0)
+    {
+      returnval='FizzBuzz';
+    }
+    else if(score%3==0 && score!=0)
+    {
+      returnval='Fizz';
+    }
+    else if (score%5==0 && score!=0)
+    {
+      returnval='Buzz';
+    }
+    else
+    {
+      returnval=score;
+    }
+    return;
 
 }
 

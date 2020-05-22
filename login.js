@@ -1,5 +1,5 @@
 "use strict";
-
+//login function stores username and opens next page (index.html)
 function loginPG1() {
   const userName = document.getElementById("usernameInput").value;
 
