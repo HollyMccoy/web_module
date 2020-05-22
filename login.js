@@ -1,7 +1,7 @@
 "use strict";
 
 function loginPG1() {
-  let userName = document.getElementById("usernameInput").value;
+  const userName = document.getElementById("usernameInput").value;
 
   if (userName == "") {
     alert("Please submit a username");
